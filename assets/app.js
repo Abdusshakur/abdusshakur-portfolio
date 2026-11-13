@@ -13,6 +13,6 @@ if(filters.length&&cards.length){filters.forEach(b=>b.addEventListener('click',(
  const selected=b.dataset.filter;
  filters.forEach(x=>{const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active));});
  let shown=0;cards.forEach(x=>{const visible=selected==='all'||x.dataset.category===selected;x.hidden=!visible;if(visible)shown++;});
- if(filterStatus)filterStatus.textContent=selected==='all'?\`Showing all \${shown} projects\`:\`Showing \${shown} projects\`;
+ if(filterStatus)filterStatus.textContent=selected==='all'?`Showing all ${shown} projects`:`Showing ${shown} projects`;
 }));}
 })();
