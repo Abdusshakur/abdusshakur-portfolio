@@ -150,3 +150,7 @@ h2{font-size:clamp(33px,3.8vw,52px)}
 :focus-visible{outline:3px solid #D96436;outline-offset:4px}
 [data-theme='dark'] .project-filter.active{background:#D96436;color:#211F1D;border-color:#D96436}
 @media(max-width:570px){.project-filters{gap:7px}.project-filter{padding:9px 12px;font-size:11px}.case-overview-panel{padding:20px}.case-system-graphic{justify-content:flex-start;gap:9px}.case-system-graphic:before{display:none}}
+
+/* Smart wheelchair case-study gallery */
+.wheelchair-figures .figure:last-child{grid-column:1/-1}.wheelchair-figures .figure img{max-height:560px;object-fit:contain}.wheelchair-figures .figure figcaption strong{color:var(--ink)}
+@media(max-width:700px){.wheelchair-figures .figure:last-child{grid-column:auto}}
